@@ -130,7 +130,7 @@ def consultar_marcados(lancha):
         for y in datas:
             datas_marcadas.append(y)
 
-    
+    print(datas_marcadas)
 
     con.commit()
     con.close()
@@ -138,12 +138,12 @@ def consultar_marcados(lancha):
     return datas_marcadas
 #==============================
 
-#image = Image.open('foto.jpg')
+image = Image.open('foto.jpg')
 
 
 st.title('Agendamento JetClub')
 
-#st.image(image, use_column_width=True)
+st.image(image, use_column_width=True)
 
 login = st.sidebar.text_input(label='Login')
 
@@ -176,7 +176,6 @@ if cotista != 'Não encontrado':
 
     agendados = agendados.split(',')
 
-    st.write(marcados)
 
     for x in agendados:
         if x != '':
@@ -228,3 +227,4 @@ if cotista != 'Não encontrado':
 
             if status == 'Devedor':
                 st.error('Acerte a sua mensalidade!')
+    st.success(marcados)

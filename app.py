@@ -138,7 +138,7 @@ def consultar_marcados(lancha):
     return datas_marcadas
 #==============================
 
-image = Image.open('foto.jpg')
+#image = Image.open('foto.jpg')
 
 
 st.title('Agendamento JetClub')

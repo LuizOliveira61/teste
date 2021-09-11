@@ -143,7 +143,7 @@ def consultar_marcados(lancha):
 
 st.title('Agendamento JetClub')
 
-st.image(image, use_column_width=True)
+#st.image(image, use_column_width=True)
 
 login = st.sidebar.text_input(label='Login')
 

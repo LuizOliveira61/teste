@@ -130,7 +130,7 @@ def consultar_marcados(lancha):
         for y in datas:
             datas_marcadas.append(y)
 
-    print(datas_marcadas)
+    
 
     con.commit()
     con.close()
@@ -176,7 +176,7 @@ if cotista != 'Não encontrado':
 
     agendados = agendados.split(',')
 
-    #st.write(agendados)
+    st.write(marcados)
 
     for x in agendados:
         if x != '':

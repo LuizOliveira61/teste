@@ -138,12 +138,12 @@ def consultar_marcados(lancha):
     return datas_marcadas
 #==============================
 
-image = Image.open('foto.jpg')
+#image = Image.open('foto.jpg')
 
 
 st.title('Agendamento JetClub')
 
-st.image(image, use_column_width=True)
+#st.image(image, use_column_width=True)
 
 login = st.sidebar.text_input(label='Login')
 
